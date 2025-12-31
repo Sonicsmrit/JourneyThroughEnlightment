@@ -50,15 +50,16 @@ while running:
     pygame.draw.circle(screen, "red", player_pos, 40)
 
     keys = pygame.key.get_pressed()
-    if keys[pygame.K_UP]:
-        player_pos.y -= 300 * dt
-    if keys[pygame.K_DOWN]:
-        player_pos.y += 300 * dt
-    if keys[pygame.K_LEFT]:
-        player_pos.x -= 300 * dt
-    if keys[pygame.K_RIGHT]:
-        player_pos.x += 300 * dt
+    # if keys[pygame.K_UP]:
+    #     player_pos.y -= 300 * dt
+    # if keys[pygame.K_DOWN]:
+    #     player_pos.y += 300 * dt
+    # if keys[pygame.K_LEFT]:
+    #     player_pos.x -= 300 * dt
+    # if keys[pygame.K_RIGHT]:
+    #     player_pos.x += 300 * dt
 
+    
     # flip() the display to put your work on screen
     pygame.display.flip()
 
