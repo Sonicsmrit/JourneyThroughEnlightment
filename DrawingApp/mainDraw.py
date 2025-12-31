@@ -43,8 +43,11 @@ while running:
     mouse_xy = pygame.mouse.get_pos()
     mouse_x = mouse_xy[0]
     mouse_y = mouse_xy[1]
+    grid_x = (mouse_x // 20) * 20
+    grid_y = (mouse_y // 20) * 20
 
-    pixl = (mouse_x,mouse_y,20,20) #x,y,size-width, size-height
+    pixl = (grid_x,grid_y,20,20) #x,y,size-width, size-height
+    
     
     #preview the colour in hand
     pygame.draw.rect(screen, 'gold', (395, 25, 30, 30))
