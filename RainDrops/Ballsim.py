@@ -53,7 +53,7 @@ class Balls:
             
 
             self.y = height - self.size
-            bounce = (self.size/20) + 0.1
+            bounce = (self.size/20) +0.1
             bounce = max(0.3,bounce)
             self.vy *= -bounce
             self.vx *= -0.5

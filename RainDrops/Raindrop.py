@@ -10,7 +10,7 @@ class Drops:
 
     def __init__(self):
         self.x = random.randint(0,800)
-        self.y = 0
+        self.y = -500
         self.speed = random.randint(200,1000)
         self.color = (random.randint(0,255),random.randint(0,255), random.randint(0,255))
         self.last_time = time.time()
