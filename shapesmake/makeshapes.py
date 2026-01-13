@@ -6,7 +6,7 @@ pygame.init()
 width, height = (800,800)
 screen = pygame.display.set_mode((width,height))
 running = True
-radius = 50
+radius = 150
 
 class shapes:
     def __init__(self, index, total):
@@ -31,12 +31,13 @@ class shapes:
             #x = centerX + radius * cos(angle)
             #y = centerY + radius * sin(angle)
             
+            
             angle = 2 * math.pi * (self.index/self.total)
             self.tobeX = self.centerX + radius * math.cos(angle)
             self.tobeY = self.centerY + radius * math.sin(angle)
 
         if key[pygame.K_2]:
-            square = 200
+            square = 300
             half_sqr = square//2
             per_side = self.total // 4
             pos = self.index%per_side
@@ -64,7 +65,7 @@ class shapes:
             progress = pos / per_side 
 
             # Calculate 3 corner points
-            tri_height = 150
+            tri_height = 300
             top_corner = (self.centerX, self.centerY - tri_height//2)
             bottom_left = (self.centerX - tri_height//2, self.centerY + tri_height//2)
             bottom_right = (self.centerX + tri_height//2, self.centerY + tri_height//2)
