@@ -93,14 +93,6 @@ class shapes:
         self.y += (self.tobeY - self.y) * 0.01
 
 
-
-
-
-
-
-
-
-
 balls = []
 
 total = 200
