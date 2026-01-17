@@ -1,6 +1,5 @@
 import cv2 as cv
 from tqdm import tqdm
-import time
 
 
 #c:\Users\dell\Downloads\BadApple.mp4
