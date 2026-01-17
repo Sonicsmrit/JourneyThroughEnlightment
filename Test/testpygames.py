@@ -127,3 +127,47 @@
 #     pygame.display.flip()
 
 # pygame.quit()
+
+import cv2 as cv
+
+vid = cv.VideoCapture("Test/BadApple.mp4")
+
+running = True
+
+while running:
+    rel, frame = vid.read()
+    cv.imshow("Bad Apple", frame)
+
+    if cv.waitKey(25) & 0xFF == ord('x'):
+        running = False
+
+vid.release()
+cv.destroyAllWindows()
+
+# img = cv.imread("Test/test.jpg")
+# # cv.imshow("Image", img)
+# # cv.waitKey(0)
+# gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
+# cv.circle(gray,(100,100),40,(0,255,0),5)
+# cv.imshow("Gray", gray)
+
+# cv.waitKey(0)
+# cap = cv.VideoCapture(0)
+# print(cap)
+# while True:
+#     a,b = cap.read()
+    
+    
+#     cv.imshow("Webcam", b)
+
+#     if cv.waitKey(1) & 0xFF == ord('x'):
+#         break
+# cap.release()
+# cv.destroyAllWindows()
+
+
+
+# with cv.imread("Test/test.jpg") as image:
+#     cv.imshow("Image", image)
+#     cv.waitKey(0)  
+#Doesn't work cuz context error
